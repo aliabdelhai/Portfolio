@@ -1,6 +1,5 @@
 <h2 align="center">
   Portfolio Website<br/>
-  <a href="https://portfolio-ali-abdelhai.herokuapp.com/" target="_blank">portfolio-ali-abdelhai.herokuapp.com/</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="./Images/readmeImg.png" />
