@@ -4,9 +4,8 @@ import Particle from "../Particle";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Github from "./Github";
-import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import myImg from "../../Assets/avatar.svg";
+// import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 
 function About() {
@@ -34,8 +33,9 @@ function About() {
             className="myAvtar"
           >
             <Tilt>
-            <img src={myImg} className="img-fluid" alt="avatar" />
+            {/* <img src={myImg} className="img-fluid" alt="avatar" /> */}
             </Tilt>
+            
           </Col>
           
         </Row>
@@ -43,24 +43,50 @@ function About() {
           Professional <strong className="purple">Skillset </strong>
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-          <Techstack iconName="devicon-cplusplus-line" />
-          <Techstack iconName="devicon-python-plain-wordmark " />
-          <Techstack iconName="devicon-javascript-plain " />
-          <Techstack iconName="devicon-nodejs-plain-wordmark " />
-          <Techstack iconName="devicon-express-original-wordmark" />
-          <Techstack iconName="devicon-react-original-wordmark" />
-          <Techstack iconName="devicon-mongodb-plain-wordmark" />
-          <Techstack iconName="devicon-git-plain-wordmark" />
-          <Techstack iconName="devicon-bootstrap-plain-wordmark" />
+        <Col xs={4} md={2} className="tech-icons">
+          <i className="devicon-cplusplus-line tech-icon-images"></i>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <i className="devicon-python-plain-wordmark tech-icon-images"></i>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <i className="devicon-javascript-plain tech-icon-images"></i>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <i className="devicon-nodejs-plain-wordmark tech-icon-images"></i>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <i className="devicon-express-original-wordmark tech-icon-images"></i>
+        </Col>
+                <Col xs={4} md={2} className="tech-icons">
+          <i className="devicon-react-original-wordmark tech-icon-images"></i>
+        </Col>
+                <Col xs={4} md={2} className="tech-icons">
+          <i className="devicon-mongodb-plain-wordmark tech-icon-images"></i>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <i className="devicon-git-plain-wordmark tech-icon-images"></i>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <i className="devicon-bootstrap-plain-wordmark tech-icon-images"></i>
+        </Col>
         </Row>
         <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-          <Techstack iconName="devicon-linux-plain" />
-          <Techstack iconName="cib-visual-studio-code" />
-          <Techstack iconName="cib-postman" />
-          <Techstack iconName="cib-heroku" />
+        <Col xs={4} md={2} className="tech-icons">
+          <i className="devicon-linux-plain tech-icon-images"></i>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <i className="cib-visual-studio-code tech-icon-images"></i>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <i className="cib-postman tech-icon-images"></i>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <i className="cib-heroku tech-icon-images"></i>
+        </Col>
         </Row>
         <Github />
       </Container>
