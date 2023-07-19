@@ -20,6 +20,18 @@ function Resume() {
         </Row>
         <Row className="resume">
           <Col md={6} className="resume-left">
+           <h3 className="resume-title">WORK EXPERIENCE</h3>
+            <Resumecontent
+              title="Full Stack developer at Igentify"
+              date="Aug 2021 – Feb 2023"
+              content={[`Received coaching and support from senior software engineers and gained practical
+                          experience in using Java and JS.`,
+                `Tested software for bugs, fixing bugs.`,
+                "Committed code to GIT/SVN and created code reviews",
+                "Build RESTful APIs that served data to the JavaScript front-end",
+                "Wrote automated tests that ensured 100% correct functionality of the code.",
+              ]}
+            />
             <h3 className="resume-title">Experience (student positions)</h3>
             <Resumecontent
               title="Physics Teacher"
@@ -33,6 +45,14 @@ function Resume() {
               content={["The Hebrew University Of Jerusalem"
               ]}
             />
+
+            <Resumecontent
+              title="Lifeguard"
+              date="2015 – 2019"
+              content={["Lifeguard at Country Club, Kfar Saba"
+              ]}
+            />
+
         
             <h3 className="resume-title">LANGUAGES</h3>
             <Resumecontent
@@ -73,11 +93,19 @@ function Resume() {
             <Resumecontent
               title=""
               content={[
-                `Frameworks: React & MobX`,
-                `Client Side: JavaScript (ES5/6), jQuery, HTML, CSS`,
-                "Server Side: Node.js, Express, MongoDB, SQL",
-                "Tools: Git, working in collaboration in Github, Heroku",
-                "IDEs: Visual Studio, PyCharm, Intellej, CLion",
+                `Frameworks: React & MobX & Spring Boot`,
+                `Client Side: JavaScript (ES5/6), jQuery, HTML, CSS, Materialize, Matlab`,
+                "Server Side: Node.js, Express, MongoDB, SQL, Sequelize",
+                "Tools: Git, working in collaboration in Github, Heroku, Jira, Docker, AWS, Rabbitmq",
+                "IDEs: Visual Studio, PyCharm, Intellej, CLion, Android Studio, WebStorm",
+              ]}
+            />
+
+            <h3 className="resume-title">VOLUNTEERING</h3>
+            <Resumecontent
+              title="Perach program"
+              content={[
+                "Tutor, Perach program - monitoring academic progress",
               ]}
             />
           </Col>
